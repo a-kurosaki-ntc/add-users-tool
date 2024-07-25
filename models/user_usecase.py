@@ -13,3 +13,7 @@ class UserUsecase(Base):
     __table_args__ = (
         PrimaryKeyConstraint('user_id', 'usecase_id'),
     )
+
+    def __init__(self, user_id, usecase_id):
+        self.user_id = user_id
+        self.usecase_id = usecase_id

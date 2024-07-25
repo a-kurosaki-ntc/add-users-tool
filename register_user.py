@@ -26,6 +26,7 @@ if __name__ == '__main__':
         user = User("", "", email, is_admin)
         try:
             session.add(user)
+            session.flush()
             for usecase in session.query(Usecase).all():
                 if not usecase.is_public and not user.is_admin:
                     continue
