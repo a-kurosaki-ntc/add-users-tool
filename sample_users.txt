@@ -1,0 +1,2 @@
+hoge@exmaple.com 1
+fuga@example.com 0
